@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack server",
+    "build:dev": "env NODE_ENV=development webpack",
+    "build": "env NODE_ENV=production webpack",
     "lint": "npx eslint src/**/*.js",
     "dev": "npx webpack server",
     "prepare": "husky install"
